@@ -24,7 +24,7 @@ Date and time in javascript
         <div class="child red">child 3</div>
         <div class="child">child 4</div>
         <form action="none.html" method="post">
-            <a href="//codewithharry.com">Go to Code With Harry</a>
+            <a href="//codewithaastha.com">Go to Code With aastha</a>
             <br>
             <br>
             Search this website: <input type="text" name="Hello" id="">
