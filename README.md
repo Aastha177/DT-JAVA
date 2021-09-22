@@ -10,7 +10,7 @@ Date and time in javascript
 </head>
 <body>
     <div class="container">
-        <h1 id="heading" class='yourhead rhia is'> Welcome to Code With Harry</h1>
+        <h1 id="heading" class='yourhead rhia is'>Code With Aastha</h1>
         <div id="myfirst" class="child red good" id="first">child 1
 
             <ul class="this" id='myul'>
