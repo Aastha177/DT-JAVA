@@ -1,76 +1,66 @@
-# DT-JAVA
-Date and time in javascript
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="container">
-        <h1 id="heading" class='yourhead rhia is'>Code With Aastha</h1>
-        <div id="myfirst" class="child red good" id="first">child 1
 
-            <ul class="this" id='myul'>
-                <li class="childul" id='fui'>this</li>
-                <li class="childul">is</li>
-                <li class="childul">a</li>
-                <li class="childul">list </li>
-                <li class="childul" id='lui'>of my dreams</li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Magic Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-        <div class="child">child 2</div>
-        <div class="child red">child 3</div>
-        <div class="child">child 4</div>
-        <form action="none.html" method="post">
-            <a href="//codewithaastha.com">Go to Code With aastha</a>
-            <br>
-            <br>
-            Search this website: <input type="text" name="Hello" id="">
-            <button id="btn">Submit form</button>
-            <!-- <input type="button" id='btn' value="submit"> -->
-        </form>
-    </div>
-    <br>
-    <div class="no">this is a dummy div1</div>
-    <div class="no">this is a dummy div2</div>
-    <div class="no">this is a dummy div3</div>
-</body>
-<!-- <script src="js/tut12.js"></script> -->
-<!-- <script src="js/tut14.js"></script> -->
-<!-- <script src="js/tut15.js"></script> -->
-<!-- <script src="js/tut16.js"></script> -->
-<!-- <script src="js/tut17.js"></script> -->
-<!-- <script src="js/tut18.js"></script> -->
-<!-- <script src="js/tut20.js"></script> -->
-<!-- <script src="js/tut21.js"></script> -->
-<script src="js/tut23.js"></script>
-</html>
-    
-    console.log("Welcome here");
+    </nav>
 
-let today = new Date();
-// console.log(typeof today);
-let otherDate = new Date('8-4-2003 04:54:08');
-// otherDate = new Date('June 13 1976');
-// otherDate = new Date('09/16/1976');
-console.log(otherDate);
-let a;
-a = otherDate.getDay();
-a = otherDate.getDate();
-a = otherDate.getMinutes();
-// a = otherDate.getSeconds();
-// a = otherDate.getHours();
-a = otherDate.getTime();
-a = otherDate.getMilliseconds();
-a = otherDate.getMonth();
-console.log(a);
-otherDate.setDate(23);
-otherDate.setMonth(0);
-otherDate.setFullYear(1900);
-otherDate.setMinutes(2);
-otherDate.setHours(1);
-otherDate.setSeconds(3);
-console.log(otherDate);
- 
+
+    <div class="container my-3">
+        <h1>Welcome To Magic Notes</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid"> </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
